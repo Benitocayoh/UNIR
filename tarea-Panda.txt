@@ -1,0 +1,55 @@
+realizar el siguiente codigo en python
+Utilizar el lenguaje de programación Python.
+Utilizar las librerías Pandas y Numpy para el análisis de datos y las operaciones numéricas.
+
+Cargar los datos desde los archivos CSV que están presentes en el proyecto. Las rutas de los archivos deben ser absolutas, como se muestra a continuación:
+/data/sales.csv 
+/data/inventories.csv
+/data/satisfaction.csv
+
+Procesamiento de los datos:
+Limpiar los datos eliminando filas con valores nulos.
+Asegurar que los DataFrames tengan la estructura correcta y estén listos para su análisis.
+Realizar los siguientes análisis estadísticos utilizando Pandas:
+Calcular las ventas totales por tienda.
+Calcular la rotación de inventarios por tienda.
+Filtrar las tiendas con inventarios críticos (menos del 10% en ventas respecto al inventario disponible).
+Analizar la satisfacción del cliente y filtrar las tiendas con una satisfacción menor al 60%.
+Realizar cálculos numéricos con Numpy:
+Calcular la mediana de las ventas totales.
+Calcular la desviación estándar de las ventas.
+Simular proyecciones de ventas futuras usando arrays aleatorios de Numpy.
+El código debe estar bien organizado y comentado, explicando los pasos importantes del análisis y las operaciones realizadas.
+
+La empresa ficticia RetailNow, que gestiona una cadena de tiendas minoristas, desea realizar un análisis detallado del rendimiento de sus diferentes sucursales en varias ciudades. Para ello, han recopilado datos de las ventas, los inventarios y la satisfacción del cliente en archivos CSV. Tu misión será procesar, explorar y analizar estos datos usando Pandas y Numpy para ayudar a la dirección a tomar decisiones estratégicas sobre la optimización del rendimiento de las tiendas.
+
+1. Preparar el entorno de trabajo:
+
+2. Importar las librerías necesarias:
+Importa las librerías Pandas y Numpy que necesitarás para realizar el análisis.
+3. Cargar los datos (lectura y procesamiento de datos - Pandas):
+Utiliza Pandas para cargar los archivos CSV: sales.csv, inventories.csv y satisfaction.csv.
+Guarda los datos en tres DataFrames distintos.
+Limpia los datos eliminando filas con valores nulos utilizando el método dropna(). Esto te permitirá trabajar solo con datos válidos.
+4. Exploración de datos (Pandas)
+Calcula las ventas totales por producto y por tienda.
+Calcula los ingresos totales por tienda, multiplicando la cantidad vendida por el precio unitario.
+Genera un resumen estadístico de las ventas utilizando el método describe() para obtener la media, mediana y otras métricas clave.
+Si los productos están clasificados por categorías, calcula el promedio de ventas por tienda y categoría de productos.
+Utiliza groupby() en Pandas para calcular las ventas totales por tienda o por categoría.
+5. Análisis de inventarios (Pandas)
+Calcula la rotación de inventarios para cada tienda. Esto se hace dividiendo las ventas totales por el stock disponible de cada producto.
+Almacena los resultados en una nueva columna dentro del DataFrame de inventarios.
+Filtra y muestra las tiendas con niveles críticos de inventario, es decir, aquellas tiendas donde el porcentaje de productos vendidos sea menor al 10% del stock disponible.
+Utiliza groupby() y operaciones matemáticas para calcular la rotación de inventarios.
+Aplica filtros con Pandas para identificar las tiendas con niveles críticos.
+6. Satisfacción del cliente (Pandas)
+Realiza un análisis de la satisfacción de los clientes en cada tienda. Relaciona estos datos con el rendimiento de las ventas.
+Filtra las tiendas con niveles bajos de satisfacción (< 60%) y haz recomendaciones para mejorar el rendimiento de estas tiendas.
+7. Operaciones con Numpy
+Usar Numpy para realizar los siguientes cálculos sobre las ventas:
+Mediana de las ventas totales.
+Desviación estándar de las ventas totales.
+Para los cálculos, convierte la columna Total_Ventas del DataFrame de Pandas a un array de Numpy usando .to_numpy (o .values si lo prefieres).
+Genera arrays aleatorios utilizando la biblioteca Numpy para simular proyecciones de ventas futuras.
+Usa el módulo de aleatoriedad de Numpy y asegúrate de establecer una semilla (seed) para obtener resultados reproducibles.
